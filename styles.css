@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #E6F1FF, #A1C8FF); /* Soft professional gradient (light blue to cool blue) */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* Elegant blue gradient */
+    color: white;
+    padding: 3rem 0;
+    border-radius: 0 0 60% 60%;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #003366, #0066CC); /* Deep to medium blue gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    background: linear-gradient(135deg, #3B82F6, #1E3A8A); /* Reversed gradient on hover */
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://img.freepik.com/free-vector/flat-twitch-background-world-mental-health-day_23-2150740754.jpg?t=st=1731788875~exp=1731792475~hmac=fed42c0ee10acc5b1201dba2f7a785a8775192299dd520ebda44dde42aff3702&w=900') no-repeat center center/cover;
+    background-size: cover;
+    color: white;
+    padding: 6rem 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background: linear-gradient(135deg, #1D4ED8, #2563EB); /* Smooth blue gradient for button */
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .btn:hover {
+    background: linear-gradient(135deg, #2563EB, #1D4ED8); /* Inverted gradient on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero .btn:hover::before {
+    width: 350%;
+    height: 350%;
+    top: -25%;
+    left: -25%;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #A1C8FF, #E6F1FF); /* Soft blue gradient */
+}
+
+.about h2 {
+    margin-bottom: 1.5rem;
+    color: #1E3A8A; /* Professional dark blue */
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.services .service-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    background: linear-gradient(135deg, #F0F8FF, #D1E8FF); /* Light to soft blue gradient on cards */
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    flex: 1 1 calc(33.333% - 2rem);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.services .card h3 {
+    color: #1E3A8A; /* Dark blue for card headings */
+    margin-bottom: 1.5rem;
+}
+
+.services .card p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #003366, #0066CC); /* Dark blue footer gradient */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Option Bar */
+.option-bar {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* Gradient for sticky option bar */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.option-bar li {
+    margin: 0 20px;
+}
+
+.option-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.option-bar a:hover {
+    background: linear-gradient(135deg, #3B82F6, #1E3A8A); /* Hover effect */
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+    background: linear-gradient(135deg, #F0F8FF, #D1E8FF); /* Gradient for cards */
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    color: #1E3A8A; /* Dark blue for headings */
+    margin-bottom: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar ul, .option-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .service-cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .services .card {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        padding: 1rem 1.5rem;
+    }
+}
